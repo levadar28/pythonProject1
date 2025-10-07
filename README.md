@@ -274,6 +274,8 @@ print(format_record(["  сидорова  анна   сергеевна ", "ABB-
 ### Пример выполнения
 <img width="1920" height="1200" alt="ex C Kolesnichenko Daria" src="https://github.com/user-attachments/assets/aa4d5847-1625-4563-ad47-279230bbaa70" />
 
+## Вывод
+
 
 
 
