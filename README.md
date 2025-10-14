@@ -451,23 +451,24 @@ Raises:
         
 ```python
 def format_record(rec: tuple[str, str, float]) -> str:
+# Проверка количества элементов
     if len(rec) != 3:
         raise ValueError("Запись должна содержать 3 элемента: ФИО, группа и GPA")
-
+# Проверка типа GPA
     if not isinstance(rec[2], (int, float)):
         raise TypeError("GPA должен быть числом")
-
+ # Проверка, что группа не пустая
     if len(rec[1].strip()) == 0:
         raise ValueError("Группа не может быть пустой")
-
+# Обработка ФИО
     name_parts = rec[0].strip().split()
     if len(name_parts) < 2:
         raise ValueError("ФИО должно содержать фамилию и хотя бы одно имя")
-
+# Форматируем фамилию
     surname = name_parts[0].capitalize()
-
+# Создаем инициалы из остальных частей ФИО
     initials = '.'.join(name[0].upper() for name in name_parts[1:]) + '.'
-
+# Форматируем итоговую строку
     return f"{surname} {initials}, гр. {rec[1]}, GPA {rec[2]:.2f}"
 print(format_record(["Иванов Иван Иванович", "BIVT-25", 4.6]))
 print(format_record(["Петров Пётр", "IKBO-12", 5.0]))
