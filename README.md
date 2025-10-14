@@ -360,12 +360,38 @@ print(repr(normalize("ПрИвЕт\nМИр\t")))
 print(repr(normalize("ёжик, Ёлка", yo2e=True)))
 print(repr(normalize("Hello\r\nWorld")))
 print(repr(normalize("  двойные   пробелы  ")))
+
+print(tokenize("привет мир"))
+print(tokenize("hello,world!!!"))
+print(tokenize("по-настоящему круто"))
+print(tokenize("2025 год"))
+print(tokenize("emoji 😀 не слово"))
+
+tokens1 = ["a","b","a","c","b","a"]
+freq1 = count_freq(tokens1)
+print(freq1)
+print(top_n(freq1, 2))
+
+tokens2 = ["bb","aa","bb","aa","cc"]
+freq2 = count_freq(tokens2)
+print(freq2)
+print(top_n(freq2, 2))
 ```
 
 ### Описание программы
-Эта программа на Python 
+Эта программа представляет собой набор утилит для обработки и анализа текста на Python: функция "normalize(text, casefold=True, yo2e=True)" нормализует текст: приводит к нижнему регистру (по умолчанию), заменяет букву "ё" на "е" (по умолчанию), убирает лишние пробелы и символы переноса; "tokenize(text)" разбивает текст на токены (слова): использует слова, включая дефисные конструкции, игнорирует знаки препинания и эмодзи; "count_freq(tokens)" подсчитывает частоту слов: создает словарь {слово: количество_вхождений}; "top_n(freq, n=5)" возвращает N самых частых слов: сортирует по убыванию частоты, при равной частоте - по алфавиту.
 
 ### Пример выполнения
+normalize:
+<img width="1920" height="1200" alt="normalize Daria Kolesnichenko laba 03" src="https://github.com/user-attachments/assets/3741e564-d90d-4c4d-9cd7-8d8d644c382e" />
+
+tokenize:
+<img width="1920" height="1200" alt="tokenize Daria Kolesnichenko laba 03" src="https://github.com/user-attachments/assets/84312860-931e-4aff-a7f7-28016d6d5138" />
+
+count_freq + top_n:
+<img width="1920" height="1200" alt="count_freq + top_n Daria Kolesnichenko laba 03" src="https://github.com/user-attachments/assets/e1f8acc8-c216-46a7-9f31-8b3e831fedf6" />
+
+
 
 
 
