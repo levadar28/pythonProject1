@@ -405,7 +405,7 @@ def transpose(mat: list[list[float | int]]) -> list[list[float | int]]:
     return [[mat[j][i] for j in range(len(mat))] for i in range(len(mat[0]))]
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
-# Проверка что матрица прямоугольная
+# Проверка, что матрица прямоугольная
     if len(mat) == 0:
         return []
     row_length = len(mat[0])
