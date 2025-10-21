@@ -609,12 +609,15 @@ count_freq + top_n:
 
 #### Примеры запуска:
 
-```powershell
+`powershell
 # Через echo
 echo "Текст для анализа" | python src\text_stats.py
 
 # Через перенаправление ввода (одна строка в файле)
 python src\text_stats.py < input.txt
+
+
+
 ```python
 import sys
 import re
@@ -684,8 +687,22 @@ if __name__ == "__main__":
 ```
 
 ### Описание программы
+Эта программа на Python анализирует текстовые данные, подсчитывает статистику слов и выводит наиболее часто встречающиеся слова. Она предназначена для обработки текста, введенного через стандартный ввод (stdin).
+
 
 ### Пример выполнения
+<img width="1920" height="1200" alt="text_stats Kolesnichenko Daria laba 03" src="https://github.com/user-attachments/assets/3ed099f0-7b50-4169-9576-da767bfea0d6" />
+
+## Вывод 
+Нормализовала текст, аккуратно токенизировала, посчитала частоты слов и вывела топ-N.
+
+
+
+
+
+
+
+
 
 
 
