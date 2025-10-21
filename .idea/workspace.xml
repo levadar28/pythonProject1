@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение">
-      <change afterPath="$PROJECT_DIR$/images/lab03/count_freq + top_n Daria Kolesnichenko laba 03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab03/normalize Daria Kolesnichenko laba 03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab03/tokenize Daria Kolesnichenko laba 03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab03/text1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab03/text_stats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab02/arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab02/arrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab02/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab02/matrix.py" afterDir="false" />
-    </list>
+    <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,19 +41,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.arrays.executor": "Run",
-    "Python.matrix.executor": "Run",
-    "Python.text.executor": "Run",
-    "Python.text1.executor": "Run",
-    "Python.text_stats.executor": "Run",
-    "Python.tuples.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab03"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.arrays.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_stats.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tuples.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab03&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab03" />
@@ -214,7 +204,15 @@
       <option name="presentableId" value="Default" />
       <updated>1759916299977</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Любое сообщение">
+      <option name="closed" value="true" />
+      <created>1761068820627</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761068820627</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
