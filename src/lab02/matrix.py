@@ -1,16 +1,16 @@
-#def transpose(mat: list[list[float | int]]) -> list[list]:
-#    if len(mat) == 0:
-#        return []
-#    rowlenght = len(mat[0])
-#    for row in mat:
-#        if len(row) != rowlenght:
-#            raise ValueError
- #   return [[row[index] for row in mat] for index in range(rowlenght)]
-#print(transpose([[1, 2, 3]]))
-#print(transpose([[1], [2], [3]]))
-#print(transpose([[1, 2], [3, 4]]))
-#print(transpose([[]]))
-#print(transpose([[1, 2], [3]]))
+def transpose(mat: list[list[float | int]]) -> list[list]:
+    if len(mat) == 0:
+        return []
+    rowlenght = len(mat[0])
+    for row in mat:
+        if len(row) != rowlenght:
+            raise ValueError
+    return [[row[index] for row in mat] for index in range(rowlenght)]
+print(transpose([[1, 2, 3]]))
+print(transpose([[1], [2], [3]]))
+print(transpose([[1, 2], [3, 4]]))
+print(transpose([[]]))
+print(transpose([[1, 2], [3]]))
 
 
 
