@@ -1168,6 +1168,9 @@ if __name__ == "__main__":
 
 <img width="1920" height="1200" alt="text_report Kolesnichenko Daria laba 04(3)" src="https://github.com/user-attachments/assets/58d92ca9-8d9a-46e9-8542-3ab1cf2ecea5" />
 
+<img width="1920" height="1200" alt="text_report Kolesnichenko Daria laba 04(4)" src="https://github.com/user-attachments/assets/ecfba23b-e13b-4b85-a148-1ba7f621f525" />
+
+
 ### Тест-кейсы
 ```python
 """
@@ -1276,7 +1279,7 @@ if __name__ == "__main__":
 <img width="1920" height="1200" alt="test-case Kolesnichenko Daria laba 04 (2)" src="https://github.com/user-attachments/assets/9663b2ea-b238-4e2e-b5a6-49113ea0afa0" />
 
 ## Вывод
-
+Закрепила работу с файлами (чтение/запись, кодировки), автоматизировала сбор статистики по словам и выгрузила её в CSV.  
 
 
 
