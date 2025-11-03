@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение git add . git commit  git push">
-      <change afterPath="$PROJECT_DIR$/images/lab04/io_text_csv Kolesnichenko Daria laba 04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab04/test-case Kolesnichenko Daria laba 04 (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab04/test-case Kolesnichenko Daria laba 04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab04/text_report Kolesnichenko Daria laba 04 (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab04/text_report Kolesnichenko Daria laba 04(3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab04/text_report Kolesnichenko Daria laba 04(4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab04/text_report Kolesnichenko Daria laba 04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab04/io_txt_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab04/text_analysis_simple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab04/text_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab04/text_report_standalone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/csv to xlsx laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/json to csv laba 05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/primer 1 people.json laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/primers scrin 1 laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/primers scrin 2 laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/primers scrin 3 laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/primers scrin 4 laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/primers scrin 5 laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab05/work with csv people.csv laba05 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/csv to xlsx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/csv_xlsx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/data/data/out/people.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/data/data/primers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/data/data/test converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/data/work with csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/json to csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/json_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab05/people.json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,31 +61,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.arrays.executor&quot;: &quot;Run&quot;,
-    &quot;Python.io_txt_csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_analysis_simple.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_report.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_report_standalone.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_stats.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tuples.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab04&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.arrays.executor": "Run",
+    "Python.csv to xlsx.executor": "Run",
+    "Python.csv_xlsx.executor": "Run",
+    "Python.io_txt_csv.executor": "Run",
+    "Python.json to csv.executor": "Run",
+    "Python.json_csv.executor": "Run",
+    "Python.matrix.executor": "Run",
+    "Python.people.json.executor": "Run",
+    "Python.primers.executor": "Run",
+    "Python.test converter.executor": "Run",
+    "Python.text.executor": "Run",
+    "Python.text1.executor": "Run",
+    "Python.text_analysis_simple.executor": "Run",
+    "Python.text_report.executor": "Run",
+    "Python.text_report_standalone.executor": "Run",
+    "Python.text_stats.executor": "Run",
+    "Python.tuples.executor": "Run",
+    "Python.work with csv.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab05"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab05" />
+      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab05\data\data\out" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab04" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab03" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.text_analysis_simple">
-    <configuration name="io_txt_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.primers">
+    <configuration name="csv to xlsx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,11 +104,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab04/io_txt_csv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/csv to xlsx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="text_analysis_simple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="json to csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,11 +126,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab04/text_analysis_simple.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/json to csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="text_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="primers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,11 +148,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05/data/data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab04/text_report.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/data/data/primers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="text_report_standalone" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,11 +170,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05/data/data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab04/text_report_standalone.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/data/data/test converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +183,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="text_stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="work with csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,11 +192,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab03" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05/data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab03/text_stats.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/data/work with csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.text_analysis_simple" />
-        <item itemvalue="Python.text_report_standalone" />
-        <item itemvalue="Python.text_report" />
-        <item itemvalue="Python.io_txt_csv" />
-        <item itemvalue="Python.text_stats" />
+        <item itemvalue="Python.primers" />
+        <item itemvalue="Python.test converter" />
+        <item itemvalue="Python.json to csv" />
+        <item itemvalue="Python.csv to xlsx" />
+        <item itemvalue="Python.work with csv" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761072822745</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1761532915982</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761532915982</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,6 +289,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Любое сообщение" />
     <MESSAGE value="Любое сообщение git add . git commit  git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Любое сообщение git add . git commit  git" />
+    <MESSAGE value="Любое сообщение git add . git commit  git push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Любое сообщение git add . git commit  git push" />
   </component>
 </project>
