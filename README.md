@@ -1317,7 +1317,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     """
     Преобразует JSON-файл в CSV.
     Поддерживает список словарей [{...}, {...}], заполняет отсутствующие поля пустыми строками.
-    Кодировка UTF-8. Порядок колонок — как в первом объекте или алфавитный (указать в README).
+    Кодировка UTF-8. Порядок колонок — как в                 объекте или алфавитный (указать в README).
     """
 
     # Проверка существования файла
@@ -1330,13 +1330,12 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
         raise ValueError(f"Неверный тип файла: ожидается .json, получен {json_file.suffix}")
     
     # Чтение JSON
+         
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+                      data = json.load(f)
     except json.JSONDecodeError as e:
-        raise ValueError(f"Ошибка декодирования JSON: {e}")
-    
-    # Проверка структуры данных
+        raise ValueError(f"Ошибка декодирования JSON: {e} )
+     # Проверка структуры данных 
     if not isinstance(data, list):
         raise ValueError("JSON должен содержать список объектов")
     
@@ -1351,7 +1350,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     for item in data:
         all_keys.update(item.keys())
     
-    # Порядок: сначала ключи из первого объекта, затем остальные в алфавитном порядке
+    # Порядок: сначала ключи из первого объекта, затем остальные  в алфавитном порядке
     first_item_keys = list(data[0].keys()) if data else []
     remaining_keys = sorted(all_keys - set(first_item_keys))
     fieldnames = first_item_keys + remaining_keys
@@ -1434,7 +1433,7 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 Все данные сохраняются как есть.
 Кодировка: UTF-8 для чтения CSV.
 
-Обработка зависимостей: Четкие сообщения об ошибках если пакеты не установлены.
+Обработка зависимостей: Четкие сообщения об ошибках, если пакеты не установлены.
 ```python
 import csv
 from pathlib import Path
@@ -1654,11 +1653,11 @@ ws.append() автоматически добавляет данные в сле
 import json, csv
 from pathlib import Path
 
-# Создаем директории если их нет
+# Создаем директории, если их нет
 Path("data/samples").mkdir(parents=True, exist_ok=True)
 Path("data/out").mkdir(parents=True, exist_ok=True)
 
-# Сначала создаем sample JSON файл если его нет
+# Сначала создаем sample JSON файл, если его нет
 sample_data = [
     {"name": "Alice", "age": 22, "city": "SPB"},
     {"name": "Bob", "age": 25, "city": "Moscow"},
@@ -1678,7 +1677,7 @@ with open("data/out/people_from_json.csv", "w", newline="", encoding="utf-8") as
     for item in data:
         all_keys.update(item.keys())
 
-    # Сортируем ключи для consistent порядка колонок
+    # Сортируем ключи для постоянного порядка колонок
     fieldnames = sorted(all_keys)
 
     writer = csv.DictWriter(cf, fieldnames=fieldnames)
