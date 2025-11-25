@@ -18,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -41,37 +42,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in test_json_csv.py.executor": "Run",
-    "Python tests.Python tests in tests_text.py.executor": "Run",
-    "Python.arrays.executor": "Run",
-    "Python.cli_convert.executor": "Run",
-    "Python.cli_text.executor": "Run",
-    "Python.csv to xlsx.executor": "Run",
-    "Python.csv_xlsx.executor": "Run",
-    "Python.io_txt_csv.executor": "Run",
-    "Python.json to csv.executor": "Run",
-    "Python.json_csv.executor": "Run",
-    "Python.matrix.executor": "Run",
-    "Python.people.json.executor": "Run",
-    "Python.primers.executor": "Run",
-    "Python.test converter.executor": "Run",
-    "Python.test_data.executor": "Run",
-    "Python.tests_text.executor": "Run",
-    "Python.text.executor": "Run",
-    "Python.text1.executor": "Run",
-    "Python.text_analysis_simple.executor": "Run",
-    "Python.text_report.executor": "Run",
-    "Python.text_report_standalone.executor": "Run",
-    "Python.text_stats.executor": "Run",
-    "Python.tuples.executor": "Run",
-    "Python.work with csv.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab07"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test_json_csv.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in tests_text.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.arrays.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cli_convert.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cli_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csv to xlsx.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csv_xlsx.executor&quot;: &quot;Run&quot;,
+    &quot;Python.io_txt_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.json to csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.json_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.people.json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.primers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test converter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_analysis_simple.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_report.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_report_standalone.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_stats.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tuples.executor&quot;: &quot;Run&quot;,
+    &quot;Python.work with csv.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab07&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab07" />
@@ -271,7 +272,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764092534969</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1764092642061</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764092642061</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1764092752665</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764092752665</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
