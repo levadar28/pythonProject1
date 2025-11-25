@@ -3,8 +3,8 @@ b = "4,25"
 
 print(f"a={a},b = {b}")
 
-a = float(a.replace(',', '.'))
-b = float(b.replace(',', '.'))
+a = float(a.replace(",", "."))
+b = float(b.replace(",", "."))
 
 sum_result = a + b
 avg_result = sum_result / 2

@@ -15,12 +15,14 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
         raise FileNotFoundError(f"JSON файл не найден: {json_path}")
 
     # Проверка расширения файла
-    if json_file.suffix.lower() != '.json':
-        raise ValueError(f"Неверный тип файла: ожидается .json, получен {json_file.suffix}")
+    if json_file.suffix.lower() != ".json":
+        raise ValueError(
+            f"Неверный тип файла: ожидается .json, получен {json_file.suffix}"
+        )
 
     # Чтение JSON
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
     except json.JSONDecodeError as e:
         raise ValueError(f"Ошибка декодирования JSON: {e}")
@@ -47,15 +49,17 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
 
     # Запись CSV
     try:
-        with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+        with open(csv_path, "w", encoding="utf-8", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
 
             for row in data:
                 # Заполняем отсутствующие поля пустыми строками
-                complete_row = {key: row.get(key, '') for key in fieldnames}
+                complete_row = {key: row.get(key, "") for key in fieldnames}
                 # Преобразуем все значения в строки
-                complete_row = {k: str(v) if v is not None else '' for k, v in complete_row.items()}
+                complete_row = {
+                    k: str(v) if v is not None else "" for k, v in complete_row.items()
+                }
                 writer.writerow(complete_row)
 
     except Exception as e:
@@ -74,12 +78,14 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
         raise FileNotFoundError(f"CSV файл не найден: {csv_path}")
 
     # Проверка расширения файла
-    if csv_file.suffix.lower() != '.csv':
-        raise ValueError(f"Неверный тип файла: ожидается .csv, получен {csv_file.suffix}")
+    if csv_file.suffix.lower() != ".csv":
+        raise ValueError(
+            f"Неверный тип файла: ожидается .csv, получен {csv_file.suffix}"
+        )
 
     # Чтение CSV
     try:
-        with open(csv_path, 'r', encoding='utf-8') as f:
+        with open(csv_path, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
 
             # Проверка наличия заголовка
@@ -97,7 +103,7 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
     # Запись JSON
     try:
-        with open(json_path, 'w', encoding='utf-8') as f:
+        with open(json_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
     except Exception as e:

@@ -57,7 +57,9 @@ def get_top_words(freq: dict[str, int], n: int = None) -> list[tuple[str, int]]:
     return sorted_words[:n] if n is not None else sorted_words
 
 
-def generate_report(input_file: Path, output_file: Path, encoding: str = "cp1251") -> bool:
+def generate_report(
+    input_file: Path, output_file: Path, encoding: str = "cp1251"
+) -> bool:
     """
     Генерирует отчет по анализу текста.
 
@@ -136,35 +138,34 @@ def main():
   • Если входной файл не существует - ошибка с кодом выхода 1
   • Если файл пустой - создается отчет только с заголовком
   • Проблемы с кодировкой - подсказка использовать --encoding
-        """
+        """,
     )
 
     parser.add_argument(
-        '-i', '--in',
-        dest='input_file',
-        default='data/input.txt',
-        help='Путь к входному текстовому файлу (по умолчанию: data/input.txt)'
+        "-i",
+        "--in",
+        dest="input_file",
+        default="data/input.txt",
+        help="Путь к входному текстовому файлу (по умолчанию: data/input.txt)",
     )
 
     parser.add_argument(
-        '-o', '--out',
-        dest='output_file',
-        default='data/report.csv',
-        help='Путь для сохранения CSV отчета (по умолчанию: data/report.csv)'
+        "-o",
+        "--out",
+        dest="output_file",
+        default="data/report.csv",
+        help="Путь для сохранения CSV отчета (по умолчанию: data/report.csv)",
     )
 
     parser.add_argument(
-        '-e', '--encoding',
-        dest='encoding',
-        default='utf-8',
-        help='Кодировка входного файла (по умолчанию: utf-8). Для Windows файлов используйте cp1251'
+        "-e",
+        "--encoding",
+        dest="encoding",
+        default="utf-8",
+        help="Кодировка входного файла (по умолчанию: utf-8). Для Windows файлов используйте cp1251",
     )
 
-    parser.add_argument(
-        '--verbose', '-v',
-        action='store_true',
-        help='Подробный вывод'
-    )
+    parser.add_argument("--verbose", "-v", action="store_true", help="Подробный вывод")
 
     args = parser.parse_args()
 

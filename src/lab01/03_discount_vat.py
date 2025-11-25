@@ -1,6 +1,6 @@
-price = input("Введите цену: ").strip().replace(',', ".")
-discount = input("Введите скидку: ").strip().replace(',', '.')
-vat = input("Введите НДС: ").strip().replace(',', '.')
+price = input("Введите цену: ").strip().replace(",", ".")
+discount = input("Введите скидку: ").strip().replace(",", ".")
+vat = input("Введите НДС: ").strip().replace(",", ".")
 
 price = float(price)
 discount = float(discount)

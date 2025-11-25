@@ -21,7 +21,9 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     """
     # Проверка доступности openpyxl
     if not OPENPYXL_AVAILABLE:
-        raise ImportError("Для работы функции требуется установить openpyxl: pip install openpyxl")
+        raise ImportError(
+            "Для работы функции требуется установить openpyxl: pip install openpyxl"
+        )
 
     # Проверка существования файла
     csv_file = Path(csv_path)
@@ -29,17 +31,21 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
         raise FileNotFoundError(f"CSV файл не найден: {csv_path}")
 
     # Проверка расширения файла
-    if csv_file.suffix.lower() != '.csv':
-        raise ValueError(f"Неверный тип файла: ожидается .csv, получен {csv_file.suffix}")
+    if csv_file.suffix.lower() != ".csv":
+        raise ValueError(
+            f"Неверный тип файла: ожидается .csv, получен {csv_file.suffix}"
+        )
 
     # Проверка расширения выходного файла
     xlsx_file = Path(xlsx_path)
-    if xlsx_file.suffix.lower() != '.xlsx':
-        raise ValueError(f"Неверный тип выходного файла: ожидается .xlsx, получен {xlsx_file.suffix}")
+    if xlsx_file.suffix.lower() != ".xlsx":
+        raise ValueError(
+            f"Неверный тип выходного файла: ожидается .xlsx, получен {xlsx_file.suffix}"
+        )
 
     # Чтение CSV
     try:
-        with open(csv_path, 'r', encoding='utf-8') as f:
+        with open(csv_path, "r", encoding="utf-8") as f:
             reader = csv.reader(f)
             data = list(reader)
     except Exception as e:

@@ -21,16 +21,16 @@ def read_text_with_encodings(path: str | Path) -> str:
 
     # Список кодировок для попытки (в порядке вероятности)
     encodings_to_try = [
-        'utf-8',
-        'utf-16',
-        'utf-16-le',
-        'utf-16-be',
-        'cp1251',
-        'windows-1251',
-        'cp866',
-        'koi8-r',
-        'iso-8859-1',
-        'iso-8859-5'
+        "utf-8",
+        "utf-16",
+        "utf-16-le",
+        "utf-16-be",
+        "cp1251",
+        "windows-1251",
+        "cp866",
+        "koi8-r",
+        "iso-8859-1",
+        "iso-8859-5",
     ]
 
     for encoding in encodings_to_try:
@@ -43,12 +43,13 @@ def read_text_with_encodings(path: str | Path) -> str:
 
     # Если ни одна кодировка не подошла, пробуем с игнорированием ошибок
     try:
-        content = p.read_text(encoding='utf-8', errors='ignore')
+        content = p.read_text(encoding="utf-8", errors="ignore")
         print("⚠️  Файл прочитан с игнорированием ошибок кодировки")
         return content
     except Exception as e:
         raise UnicodeDecodeError(
-            f"Не удалось прочитать файл. Попробованы кодировки: {', '.join(encodings_to_try)}") from e
+            f"Не удалось прочитать файл. Попробованы кодировки: {', '.join(encodings_to_try)}"
+        ) from e
 
 
 def write_csv(rows: list[tuple], path: str | Path, header: tuple = None) -> None:
@@ -66,13 +67,13 @@ def write_csv(rows: list[tuple], path: str | Path, header: tuple = None) -> None
 def normalize(text: str) -> str:
     """Нормализует текст: casefold + ё→е"""
     text = text.lower()
-    text = text.replace('ё', 'е')
-    return ' '.join(text.split())
+    text = text.replace("ё", "е")
+    return " ".join(text.split())
 
 
 def tokenize(text: str) -> list[str]:
     """Токенизирует текст: \w+(?:-\w+)*"""
-    return re.findall(r'\w+(?:-\w+)*', text)
+    return re.findall(r"\w+(?:-\w+)*", text)
 
 
 def create_test_file():

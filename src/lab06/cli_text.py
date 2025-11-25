@@ -8,7 +8,7 @@ def read_file(file_path):
     """Чтение файла с проверкой его существования"""
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Файл {file_path} не найден")
-    with open(file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         return f.readlines()
 
 
@@ -53,13 +53,11 @@ def main():
   python cli_text.py cat --input example.txt -n
   python cli_text.py stats --input example.txt
   python cli_text.py stats --input example.txt --top 10
-        """
+        """,
     )
 
     subparsers = parser.add_subparsers(
-        dest="command",
-        title="доступные команды",
-        metavar="команда"
+        dest="command", title="доступные команды", metavar="команда"
     )
 
     # Подкоманда cat
@@ -70,7 +68,9 @@ def main():
     # Подкоманда stats
     stats_parser = subparsers.add_parser("stats", help="статистика частот слов")
     stats_parser.add_argument("--input", required=True, help="путь к входному файлу")
-    stats_parser.add_argument("--top", type=int, default=5, help="количество топ-слов (по умолчанию: 5)")
+    stats_parser.add_argument(
+        "--top", type=int, default=5, help="количество топ-слов (по умолчанию: 5)"
+    )
 
     args = parser.parse_args()
 

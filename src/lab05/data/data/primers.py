@@ -15,7 +15,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
 
     # Чтение JSON
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
     except json.JSONDecodeError as e:
         raise ValueError(f"Ошибка декодирования JSON: {e}")
@@ -41,12 +41,12 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
 
     # Запись CSV
     Path(csv_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+    with open(csv_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
 
         for row in data:
-            complete_row = {key: str(row.get(key, '')) for key in fieldnames}
+            complete_row = {key: str(row.get(key, "")) for key in fieldnames}
             writer.writerow(complete_row)
 
 
@@ -61,7 +61,7 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
     # Чтение CSV
     try:
-        with open(csv_path, 'r', encoding='utf-8') as f:
+        with open(csv_path, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
 
             # Проверка заголовка
@@ -79,7 +79,7 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
     # Запись JSON
     Path(json_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(json_path, 'w', encoding='utf-8') as f:
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
@@ -91,7 +91,9 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
         from openpyxl import Workbook
         from openpyxl.utils import get_column_letter
     except ImportError:
-        raise ImportError("Для работы функции требуется установить openpyxl: pip install openpyxl")
+        raise ImportError(
+            "Для работы функции требуется установить openpyxl: pip install openpyxl"
+        )
 
     # Проверка существования файла
     csv_file = Path(csv_path)
@@ -100,7 +102,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
 
     # Чтение CSV
     try:
-        with open(csv_path, 'r', encoding='utf-8') as f:
+        with open(csv_path, "r", encoding="utf-8") as f:
             reader = csv.reader(f)
             data = list(reader)
     except Exception as e:
@@ -149,7 +151,7 @@ def create_sample_files():
     people_data = [
         {"name": "Анна", "age": 28, "city": "Москва", "occupation": "Инженер"},
         {"name": "Петр", "age": 35, "city": "СПБ", "occupation": "Дизайнер"},
-        {"name": "Мария", "age": 24, "city": "Казань", "occupation": "Аналитик"}
+        {"name": "Мария", "age": 24, "city": "Казань", "occupation": "Аналитик"},
     ]
 
     with open("data/samples/people.json", "w", encoding="utf-8") as f:
@@ -163,14 +165,36 @@ def create_sample_files():
 
     # 3. cities.csv - для демонстрации CSV→XLSX
     cities_data = [
-        {"city": "Москва", "population": "12678079", "area": "2561", "foundation": "1147"},
-        {"city": "Санкт-Петербург", "population": "5384342", "area": "1439", "foundation": "1703"},
-        {"city": "Новосибирск", "population": "1625631", "area": "505", "foundation": "1893"},
-        {"city": "Екатеринбург", "population": "1493749", "area": "468", "foundation": "1723"}
+        {
+            "city": "Москва",
+            "population": "12678079",
+            "area": "2561",
+            "foundation": "1147",
+        },
+        {
+            "city": "Санкт-Петербург",
+            "population": "5384342",
+            "area": "1439",
+            "foundation": "1703",
+        },
+        {
+            "city": "Новосибирск",
+            "population": "1625631",
+            "area": "505",
+            "foundation": "1893",
+        },
+        {
+            "city": "Екатеринбург",
+            "population": "1493749",
+            "area": "468",
+            "foundation": "1723",
+        },
     ]
 
     with open("data/samples/cities.csv", "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["city", "population", "area", "foundation"])
+        writer = csv.DictWriter(
+            f, fieldnames=["city", "population", "area", "foundation"]
+        )
         writer.writeheader()
         writer.writerows(cities_data)
 

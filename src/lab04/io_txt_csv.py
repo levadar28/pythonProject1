@@ -21,14 +21,17 @@ def read_text(path: Union[str, Path], encoding: str = "utf-8") -> str:
     """
     path = Path(path)
 
-    with open(path, 'r', encoding=encoding) as file:
+    with open(path, "r", encoding=encoding) as file:
         content = file.read()
 
     return content
 
 
-def write_csv(rows: List[Union[Tuple, List]], path: Union[str, Path],
-              header: Tuple[str, ...] = None) -> None:
+def write_csv(
+    rows: List[Union[Tuple, List]],
+    path: Union[str, Path],
+    header: Tuple[str, ...] = None,
+) -> None:
     """
     Записывает данные в CSV файл с разделителем запятая.
 
@@ -55,7 +58,7 @@ def write_csv(rows: List[Union[Tuple, List]], path: Union[str, Path],
                     f"Строка: {row}"
                 )
 
-    with open(path, 'w', newline='', encoding='utf-8') as file:
+    with open(path, "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
 
         if header is not None:
@@ -88,7 +91,9 @@ if __name__ == "__main__":
         print("1. Тестирование read_text():")
 
         # Создаем тестовые файлы
-        (test_dir / "input.txt").write_text("Привет, мир!\nВторая строка.", encoding="utf-8")
+        (test_dir / "input.txt").write_text(
+            "Привет, мир!\nВторая строка.", encoding="utf-8"
+        )
         (test_dir / "empty.txt").write_text("", encoding="utf-8")
 
         # Тест чтения обычного файла

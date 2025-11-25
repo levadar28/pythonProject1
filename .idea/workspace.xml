@@ -5,22 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение git add . git commit  git push">
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06 (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06(3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06(4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06(5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06(6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06(7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 1 cli_text Kolesnichenko Daria laba06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 2 cli_conventer Kolesnichenko Daria laba06 (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 2 cli_conventer Kolesnichenko Daria laba06 (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 2 cli_conventer Kolesnichenko Daria laba06(2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab06/primer 2 cli_conventer Kolesnichenko Daria laba06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab06/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab06/cli_convert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab06/cli_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab06/test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task A tests_text Kolesnichenko Daria laba07 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task A tests_text Kolesnichenko Daria laba07 (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task A tests_text Kolesnichenko Daria laba07 (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task A tests_text Kolesnichenko Daria laba07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task B tests_json_csv Kolesnichenko Daria laba07 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task B tests_json_csv Kolesnichenko Daria laba07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task C black style Kolesnichenko Daria laba07 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task C black style Kolesnichenko Daria laba07 (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task C black style Kolesnichenko Daria laba07 (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task C black style Kolesnichenko Daria laba07 (5).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task C black style Kolesnichenko Daria laba07 (6).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab07/task C black style Kolesnichenko Daria laba07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_json_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab01/02_sum_avg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab01/02_sum_avg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab01/03_discount_vat.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab01/03_discount_vat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab01/04_minutes_to_hhmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab01/04_minutes_to_hhmm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab01/05_initials_and_len.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab01/05_initials_and_len.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab02/arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab02/arrays.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab02/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab02/matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab02/tuples.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab02/tuples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab03/text1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab03/text1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab03/text_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab03/text_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab04/io_txt_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab04/io_txt_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab04/text_analysis_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab04/text_analysis_simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab04/text_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab04/text_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab04/text_report_standalone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab04/text_report_standalone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/csv to xlsx.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/csv to xlsx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/csv_xlsx.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/csv_xlsx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/data/data/primers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/data/data/primers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/data/data/test converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/data/data/test converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/data/work with csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/data/work with csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/json to csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/json to csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/json_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/json_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab05/people.json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab05/people.json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab06/cli_convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab06/cli_convert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab06/cli_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab06/cli_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab06/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab06/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +84,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_json_csv.py.executor": "Run",
+    "Python tests.Python tests in tests_text.py.executor": "Run",
     "Python.arrays.executor": "Run",
     "Python.cli_convert.executor": "Run",
     "Python.cli_text.executor": "Run",
@@ -73,6 +99,7 @@
     "Python.primers.executor": "Run",
     "Python.test converter.executor": "Run",
     "Python.test_data.executor": "Run",
+    "Python.tests_text.executor": "Run",
     "Python.text.executor": "Run",
     "Python.text1.executor": "Run",
     "Python.text_analysis_simple.executor": "Run",
@@ -83,22 +110,22 @@
     "Python.work with csv.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab06"
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab07"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab07" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab06" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab05" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab05\data\data\out" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab04" />
-      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab03" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab06" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cli_convert">
+  <component name="RunManager" selected="Python tests.Python tests in test_json_csv.py">
     <configuration name="cli_convert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -113,72 +140,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab06/cli_convert.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cli_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab06/cli_text.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="primers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05/data/data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/data/data/primers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab05/data/data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab05/data/data/test converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,13 +170,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tests_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/tests_text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_json_csv.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_json_csv.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in tests_text.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tests_text.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_json_csv.py" />
+        <item itemvalue="Python tests.Python tests in tests_text.py" />
+        <item itemvalue="Python.tests_text" />
         <item itemvalue="Python.cli_convert" />
         <item itemvalue="Python.test_data" />
-        <item itemvalue="Python.cli_text" />
-        <item itemvalue="Python.primers" />
-        <item itemvalue="Python.test converter" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762176077020</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1763492500835</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763492500835</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

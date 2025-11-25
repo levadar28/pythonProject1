@@ -38,7 +38,7 @@ def create_simple_test_data():
     json_data = [
         {"name": "Иван", "age": 25, "city": "Москва"},
         {"name": "Мария", "age": 30, "city": "Санкт-Петербург"},
-        {"name": "Петр", "age": 35, "city": "Казань"}
+        {"name": "Петр", "age": 35, "city": "Казань"},
     ]
 
     with open("test_data/samples/data.json", "w", encoding="utf-8") as f:
@@ -48,9 +48,15 @@ def create_simple_test_data():
     print("\nТестовые файлы успешно созданы в папке test_data/")
     print("\nПримеры команд:")
     print('  python cli_convert.py cat --input "test_data/samples/people.csv" -n')
-    print('  python cli_convert.py stats --input "test_data/samples/people.txt" --top 5')
-    print('  python cli_convert.py json2csv --in "test_data/samples/data.json" --out "test_data/out/data.csv"')
-    print('  python cli_convert.py csv2json --in "test_data/samples/people.csv" --out "test_data/out/people.json"')
+    print(
+        '  python cli_convert.py stats --input "test_data/samples/people.txt" --top 5'
+    )
+    print(
+        '  python cli_convert.py json2csv --in "test_data/samples/data.json" --out "test_data/out/data.csv"'
+    )
+    print(
+        '  python cli_convert.py csv2json --in "test_data/samples/people.csv" --out "test_data/out/people.json"'
+    )
 
 
 if __name__ == "__main__":

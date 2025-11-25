@@ -6,17 +6,17 @@ from collections import Counter
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     """Нормализация текста"""
     if yo2e:
-        text = text.replace('ё', 'е').replace('Ё', 'Е')
+        text = text.replace("ё", "е").replace("Ё", "Е")
     if casefold:
         text = text.casefold()
-    text = re.sub(r'[\t\r\n]', ' ', text)
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"[\t\r\n]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
 def tokenize(text: str) -> list[str]:
     """Разбивка на слова"""
-    pattern = r'\b[\w-]+\b'
+    pattern = r"\b[\w-]+\b"
     tokens = re.findall(pattern, text)
     return tokens
 

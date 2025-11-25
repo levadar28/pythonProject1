@@ -3,7 +3,7 @@ from pathlib import Path
 
 rows = [
     {"name": "Alice", "age": "22", "city": "SPB"},
-    {"name": "Bob", "age": "25", "city": "Moscow"}
+    {"name": "Bob", "age": "25", "city": "Moscow"},
 ]
 
 # Запись данных в CSV

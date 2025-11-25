@@ -14,9 +14,11 @@ def format_record(rec: tuple[str, str, float]) -> str:
 
     surname = name_parts[0].capitalize()
 
-    initials = '.'.join(name[0].upper() for name in name_parts[1:]) + '.'
+    initials = ".".join(name[0].upper() for name in name_parts[1:]) + "."
 
     return f"{surname} {initials}, гр. {rec[1]}, GPA {rec[2]:.2f}"
+
+
 print(format_record(("Иванов Иван Иванович", "BIVT-25", 4.6)))
 print(format_record(("Петров Пётр", "IKBO-12", 5.0)))
 print(format_record(("  сидорова  анна   сергеевна ", "ABB-01", 3.999)))

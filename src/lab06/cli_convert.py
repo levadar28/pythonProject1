@@ -10,13 +10,13 @@ import re
 def read_file(filename):
     """Чтение файла с обработкой ошибок"""
     try:
-        with open(filename, 'r', encoding='utf-8') as f:
+        with open(filename, "r", encoding="utf-8") as f:
             return f.readlines()
     except FileNotFoundError:
         print(f"Ошибка: Файл не найден: {os.path.abspath(filename)}")
         print(f"Текущая директория: {os.getcwd()}")
         print("Доступные файлы в текущей директории:")
-        for item in os.listdir('.'):
+        for item in os.listdir("."):
             print(f"  - {item}")
         sys.exit(1)
     except Exception as e:
@@ -24,11 +24,11 @@ def read_file(filename):
         sys.exit(1)
 
 
-def write_file(filename, content, mode='w'):
+def write_file(filename, content, mode="w"):
     """Запись файла с обработкой ошибок"""
     try:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
-        with open(filename, mode, encoding='utf-8') as f:
+        with open(filename, mode, encoding="utf-8") as f:
             f.write(content)
     except Exception as e:
         print(f"Ошибка при записи файла {filename}: {e}")
@@ -52,10 +52,10 @@ def stats_command(input_file, top_n):
         sys.exit(1)
 
     lines = read_file(input_file)
-    text = ' '.join(lines)
+    text = " ".join(lines)
 
     # Разбивка на слова с игнорированием регистра
-    words = re.findall(r'\b\w+\b', text.lower())
+    words = re.findall(r"\b\w+\b", text.lower())
 
     if not words:
         print("Файл не содержит слов")
@@ -73,7 +73,7 @@ def stats_command(input_file, top_n):
 def json_to_csv(input_file, output_file):
     """Конвертация JSON в CSV"""
     try:
-        with open(input_file, 'r', encoding='utf-8') as f:
+        with open(input_file, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         if not data:
@@ -83,7 +83,7 @@ def json_to_csv(input_file, output_file):
         if isinstance(data, list) and all(isinstance(item, dict) for item in data):
             # Список словарей
             fieldnames = data[0].keys() if data else []
-            with open(output_file, 'w', encoding='utf-8', newline='') as f:
+            with open(output_file, "w", encoding="utf-8", newline="") as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(data)
@@ -103,11 +103,11 @@ def json_to_csv(input_file, output_file):
 def csv_to_json(input_file, output_file):
     """Конвертация CSV в JSON"""
     try:
-        with open(input_file, 'r', encoding='utf-8') as f:
+        with open(input_file, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             data = list(reader)
 
-        with open(output_file, 'w', encoding='utf-8') as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"Успешно: {input_file} -> {output_file}")
 
@@ -121,7 +121,9 @@ def csv_to_json(input_file, output_file):
 
 def csv_to_xlsx(input_file, output_file):
     """Конвертация CSV в XLSX (заглушка - требует внешней библиотеки)"""
-    print("Ошибка: Конвертация CSV в XLSX требует установки внешней библиотеки (openpyxl или xlsxwriter)")
+    print(
+        "Ошибка: Конвертация CSV в XLSX требует установки внешней библиотеки (openpyxl или xlsxwriter)"
+    )
     print("Установите библиотеку: pip install openpyxl")
     sys.exit(1)
 
@@ -136,10 +138,12 @@ def main():
   python cli_convert.py stats --input "test_data/samples/people.txt" --top 5
   python cli_convert.py json2csv --in "test_data/samples/data.json" --out "test_data/out/data.csv"
   python cli_convert.py csv2json --in "test_data/samples/people.csv" --out "test_data/out/people.json"
-        """
+        """,
     )
 
-    subparsers = parser.add_subparsers(dest="command", title="доступные команды", help="выберите команду")
+    subparsers = parser.add_subparsers(
+        dest="command", title="доступные команды", help="выберите команду"
+    )
 
     # Подкоманда cat
     cat_parser = subparsers.add_parser("cat", help="Вывести содержимое файла")
@@ -149,22 +153,42 @@ def main():
     # Подкоманда stats
     stats_parser = subparsers.add_parser("stats", help="Статистика частот слов")
     stats_parser.add_argument("--input", required=True, help="Входной файл")
-    stats_parser.add_argument("--top", type=int, default=5, help="Количество топ-слов (по умолчанию: 5)")
+    stats_parser.add_argument(
+        "--top", type=int, default=5, help="Количество топ-слов (по умолчанию: 5)"
+    )
 
     # Подкоманда json2csv
-    json2csv_parser = subparsers.add_parser("json2csv", help="Конвертировать JSON в CSV")
-    json2csv_parser.add_argument("--in", dest="input", required=True, help="Входной JSON файл")
-    json2csv_parser.add_argument("--out", dest="output", required=True, help="Выходной CSV файл")
+    json2csv_parser = subparsers.add_parser(
+        "json2csv", help="Конвертировать JSON в CSV"
+    )
+    json2csv_parser.add_argument(
+        "--in", dest="input", required=True, help="Входной JSON файл"
+    )
+    json2csv_parser.add_argument(
+        "--out", dest="output", required=True, help="Выходной CSV файл"
+    )
 
     # Подкоманда csv2json
-    csv2json_parser = subparsers.add_parser("csv2json", help="Конвертировать CSV в JSON")
-    csv2json_parser.add_argument("--in", dest="input", required=True, help="Входной CSV файл")
-    csv2json_parser.add_argument("--out", dest="output", required=True, help="Выходной JSON файл")
+    csv2json_parser = subparsers.add_parser(
+        "csv2json", help="Конвертировать CSV в JSON"
+    )
+    csv2json_parser.add_argument(
+        "--in", dest="input", required=True, help="Входной CSV файл"
+    )
+    csv2json_parser.add_argument(
+        "--out", dest="output", required=True, help="Выходной JSON файл"
+    )
 
     # Подкоманда csv2xlsx
-    csv2xlsx_parser = subparsers.add_parser("csv2xlsx", help="Конвертировать CSV в XLSX (требует openpyxl)")
-    csv2xlsx_parser.add_argument("--in", dest="input", required=True, help="Входной CSV файл")
-    csv2xlsx_parser.add_argument("--out", dest="output", required=True, help="Выходной XLSX файл")
+    csv2xlsx_parser = subparsers.add_parser(
+        "csv2xlsx", help="Конвертировать CSV в XLSX (требует openpyxl)"
+    )
+    csv2xlsx_parser.add_argument(
+        "--in", dest="input", required=True, help="Входной CSV файл"
+    )
+    csv2xlsx_parser.add_argument(
+        "--out", dest="output", required=True, help="Выходной XLSX файл"
+    )
 
     args = parser.parse_args()
 

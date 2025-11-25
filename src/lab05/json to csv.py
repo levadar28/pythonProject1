@@ -9,7 +9,7 @@ Path("data/out").mkdir(parents=True, exist_ok=True)
 sample_data = [
     {"name": "Alice", "age": 22, "city": "SPB"},
     {"name": "Bob", "age": 25, "city": "Moscow"},
-    {"name": "Charlie", "age": 30, "city": "London"}
+    {"name": "Charlie", "age": 30, "city": "London"},
 ]
 
 with open("data/samples/people.json", "w", encoding="utf-8") as f:
@@ -33,7 +33,7 @@ with open("data/out/people_from_json.csv", "w", newline="", encoding="utf-8") as
 
     for row in data:
         # Заполняем отсутствующие поля пустыми строками
-        complete_row = {key: str(row.get(key, '')) for key in fieldnames}
+        complete_row = {key: str(row.get(key, "")) for key in fieldnames}
         writer.writerow(complete_row)
 
 print("JSON → CSV преобразование завершено!")
