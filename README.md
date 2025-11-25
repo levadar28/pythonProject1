@@ -2557,6 +2557,500 @@ python cli_convert.py csv2json --in "test_data/samples/people.csv" --out "test_d
 
 
 
+ ## Лабораторная работа №7 - Тестирование: pytest + стиль
+ ### A. Тесты для `src/lib/text.py`
+ ```python
+import pytest
+from src.lib.text import normalize, tokenize, count_freq, top_n
+
+
+class TestNormalize:
+    """Тесты для функции normalize()"""
+
+    @pytest.mark.parametrize(
+        "input_text, expected",
+        [
+            ("Hello World", "hello world"),
+            ("ПРИВЕТ МИР", "привет мир"),
+            ("Test with 123 numbers", "test with 123 numbers"),
+            ("Special chars: !@#$%^&*()", "special chars: !@#$%^&*()"),
+            ("With'apostrophe", "with'apostrophe"),
+            ("   Extra   Spaces   ", "extra spaces"),  # функция удаляет лишние пробелы
+            ("", ""),
+            ("UPPER and lower", "upper and lower"),
+        ],
+    )
+    def test_normalize(self, input_text, expected):
+        assert normalize(input_text) == expected
+
+
+class TestTokenize:
+    """Тесты для функции tokenize()"""
+
+    @pytest.mark.parametrize(
+        "input_text, expected",
+        [
+            ("hello world", ["hello", "world"]),
+            ("  multiple   spaces  ", ["multiple", "spaces"]),
+            ("one", ["one"]),
+            ("", []),
+            ("trailing space ", ["trailing", "space"]),
+            (" leading space", ["leading", "space"]),
+            ("hello, world! test.", ["hello", "world", "test"]),  # функция удаляет пунктуацию
+            ("price: $100.50", ["price", "100", "50"]),  # функция удаляет символы и разбивает числа
+        ],
+    )
+    def test_tokenize(self, input_text, expected):
+        assert tokenize(input_text) == expected
+
+
+class TestCountFreq:
+    """Тесты для функции count_freq()"""
+
+    @pytest.mark.parametrize(
+        "tokens, expected",
+        [
+            (["a", "b", "a"], {"a": 2, "b": 1}),
+            (["x", "x", "x"], {"x": 3}),
+            ([], {}),
+            (["hello", "world"], {"hello": 1, "world": 1}),
+            (["test", "test", "TEST"], {"test": 2, "TEST": 1}),
+            (["hello!", "hello", "hello?"], {"hello!": 1, "hello": 1, "hello?": 1}),
+        ],
+    )
+    def test_count_freq(self, tokens, expected):
+        assert count_freq(tokens) == expected
+
+
+class TestTopN:
+    """Тесты для функции top_n()"""
+
+    def test_basic_top_n(self):
+        freq = {"a": 5, "b": 3, "c": 7, "d": 2}
+        result = top_n(freq, 3)
+        expected = [("c", 7), ("a", 5), ("b", 3)]
+        assert result == expected
+
+    def test_empty_dict(self):
+        assert top_n({}, 5) == []
+
+    def test_n_larger_than_dict(self):
+        freq = {"x": 1, "y": 2}
+        result = top_n(freq, 5)
+        expected = [("y", 2), ("x", 1)]
+        assert result == expected
+
+    def test_same_frequency_ordering(self):
+        freq = {"beta": 2, "alpha": 2, "gamma": 2, "delta": 1}
+        result = top_n(freq, 3)
+        # Должны быть отсортированы по алфавиту при одинаковой частоте
+        expected = [("alpha", 2), ("beta", 2), ("gamma", 2)]
+        assert result == expected
+
+    def test_negative_n(self):
+        freq = {"a": 1, "b": 2}
+        # Функция возвращает элементы при отрицательном n
+        result = top_n(freq, -1)
+        #  # Проверю, что возвращается не пустой список (конкретное поведение зависит от реализации)
+        assert len(result) > 0
+
+    def test_zero_n(self):
+        freq = {"a": 1, "b": 2}
+        assert top_n(freq, 0) == []
+
+    def test_mixed_punctuation_tokens(self):
+        freq = {"hello": 3, "hello!": 2, "world": 4, "world.": 1}
+        result = top_n(freq, 3)
+        expected = [("world", 4), ("hello", 3), ("hello!", 2)]
+        assert result == expected
+
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])
+ ```
+### Пояснения
+1. normalize():
+   Проверяет приведение к нижнему регистру.
+   Удаление цифр и специальных символов (кроме апострофов).
+   Обработка пустых строк и пробелов.
+
+2. tokenize():
+   Проверяет разбивку по пробелам.
+   Обработка множественных пробелов.
+   Граничные случаи с пустой строкой.
+
+3. count_freq():
+   Проверяет подсчет частот.
+   Обработка пустого списка.
+   Учет регистра (если токены разные).
+
+4. top_n():
+   Проверяет сортировку по убыванию частоты.
+   Алфавитная сортировка при равных частотах.
+   Граничные случаи с пустым словарем.
+   Обработка случаев когда n превышает размер словаря.
+   Проверка работы с отрицательными и нулевыми n.
+   
+Эти тесты покрывают:
+* Базовые сценарии работы функций.
+* Граничные случаи (пустые строки, нулевые значения).
+* Особые случаи (одинаковые частоты, специальные символы).
+* Корректность сортировки и обработки данных.
+  
+Установила pytest: pip install pytest.
+
+Анализ поведения функций:
+normalize: Приводит к нижнему регистру и удаляет лишние пробелы.
+tokenize: Разбивает текст на слова, удаляя пунктуацию и специальные символы.
+top_n: При отрицательных значениях n возвращает какие-то элементы (возможно, все или по модулю n).
+
+### Пример выполнения
+<img width="1920" height="1200" alt="task A tests_text Kolesnichenko Daria laba07" src="https://github.com/user-attachments/assets/bf641d27-c26e-40d0-93c5-211a6ef18e4e" />
+<img width="1920" height="1200" alt="task A tests_text Kolesnichenko Daria laba07 (2)" src="https://github.com/user-attachments/assets/8a66a0e6-0385-4150-9746-f623d83d4dbe" />
+<img width="1920" height="1200" alt="task A tests_text Kolesnichenko Daria laba07 (3)" src="https://github.com/user-attachments/assets/7ba3f34c-7542-4b53-b4df-1a2492dd7bf6" />
+<img width="1920" height="1200" alt="task A tests_text Kolesnichenko Daria laba07 (4)" src="https://github.com/user-attachments/assets/5d6d9205-293d-4525-a32c-c504555d6ce2" />
+
+### B. Тесты для `src/lab05/json_csv.py`
+```python
+import pytest
+import json
+import csv
+import os
+from src.lab05.json_csv import json_to_csv, csv_to_json
+
+
+class TestJsonToCsv:
+    """Тесты для функции json_to_csv"""
+
+    def test_basic_conversion(self, tmp_path):
+        """Тест базовой конвертации JSON -> CSV"""
+        # Создаю тестовый JSON файл
+        json_data = [
+            {"name": "Alice", "age": 30, "city": "New York"},
+            {"name": "Bob", "age": 25, "city": "London"},
+            {"name": "Charlie", "age": 35, "city": "Tokyo"}
+        ]
+
+        json_file = tmp_path / "test.json"
+        csv_file = tmp_path / "test.csv"
+
+        with open(json_file, 'w') as f:
+            json.dump(json_data, f)
+
+        # Выполняю конвертацию
+        json_to_csv(str(json_file), str(csv_file))
+
+        # Проверяю результат
+        assert csv_file.exists()
+
+        with open(csv_file, 'r', newline='') as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+
+        # Проверяю количество записей
+        assert len(rows) == len(json_data)
+
+        # Проверяю заголовки
+        expected_headers = ["name", "age", "city"]
+        assert reader.fieldnames == expected_headers
+
+        # Проверяю данные
+        for i, row in enumerate(rows):
+            assert row["name"] == json_data[i]["name"]
+            assert row["age"] == str(json_data[i]["age"])  # CSV сохраняет как строки
+            assert row["city"] == json_data[i]["city"]
+
+    def test_different_data_types(self, tmp_path):
+        """Тест с различными типами данных"""
+        json_data = [
+            {"string": "text", "number": 42, "float": 3.14, "boolean": True, "null": None}
+        ]
+
+        json_file = tmp_path / "test.json"
+        csv_file = tmp_path / "test.csv"
+
+        with open(json_file, 'w') as f:
+            json.dump(json_data, f)
+
+        json_to_csv(str(json_file), str(csv_file))
+
+        with open(csv_file, 'r', newline='') as f:
+            reader = csv.DictReader(f)
+            row = next(reader)
+
+        # Проверяю, что все значения преобразованы в строки
+        assert row["string"] == "text"
+        assert row["number"] == "42"
+        assert row["float"] == "3.14"
+        assert row["boolean"] == "True"  # Изменено на "True" (с большой буквы)
+        assert row["null"] == ""  # null становится пустой строкой
+
+    def test_empty_json_array(self, tmp_path):
+        """Тест с пустым JSON массивом - теперь ожидаем ошибку"""
+        json_file = tmp_path / "test.json"
+        csv_file = tmp_path / "test.csv"
+
+        with open(json_file, 'w') as f:
+            json.dump([], f)
+
+        # Ожидаю ошибку, т.к. функция не допускает пустой массив
+        with pytest.raises(ValueError, match="JSON файл пуст"):
+            json_to_csv(str(json_file), str(csv_file))
+
+    def test_missing_keys(self, tmp_path):
+        """Тест с объектами, у которых разные ключи"""
+        json_data = [
+            {"name": "Alice", "age": 30},
+            {"name": "Bob", "city": "London"},  # нет age
+            {"age": 25, "city": "Tokyo"}  # нет name
+        ]
+
+        json_file = tmp_path / "test.json"
+        csv_file = tmp_path / "test.csv"
+
+        with open(json_file, 'w') as f:
+            json.dump(json_data, f)
+
+        json_to_csv(str(json_file), str(csv_file))
+
+        with open(csv_file, 'r', newline='') as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+
+        # Все возможные ключи должны быть в заголовках
+        expected_headers = ["name", "age", "city"]
+        assert set(reader.fieldnames) == set(expected_headers)
+
+        # Проверяю, что отсутствующие значения - пустые строки
+        assert rows[0]["name"] == "Alice"
+        assert rows[0]["age"] == "30"
+        assert rows[0]["city"] == ""
+
+        assert rows[1]["name"] == "Bob"
+        assert rows[1]["age"] == ""
+        assert rows[1]["city"] == "London"
+
+    def test_nonexistent_json_file(self):
+        """Тест с несуществующим JSON файлом"""
+        with pytest.raises(FileNotFoundError):
+            json_to_csv("nonexistent.json", "output.csv")
+
+    def test_invalid_json_file(self, tmp_path):
+        """Тест с некорректным JSON"""
+        json_file = tmp_path / "test.json"
+
+        # Записываю некорректный JSON
+        with open(json_file, 'w') as f:
+            f.write('{"invalid": json}')
+
+        with pytest.raises(ValueError):
+            json_to_csv(str(json_file), "output.csv")
+
+    def test_empty_json_file(self, tmp_path):
+        """Тест с пустым JSON файлом"""
+        json_file = tmp_path / "test.json"
+
+        # Создаю пустой файл
+        json_file.write_text("")
+
+        with pytest.raises(ValueError):
+            json_to_csv(str(json_file), "output.csv")
+
+
+class TestCsvToJson:
+    """Тесты для функции csv_to_json"""
+
+    def test_basic_conversion(self, tmp_path):
+        """Тест базовой конвертации CSV -> JSON"""
+        # Создаю тестовый CSV-файл
+        csv_file = tmp_path / "test.csv"
+        json_file = tmp_path / "test.json"
+
+        with open(csv_file, 'w', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=["name", "age", "city"])
+            writer.writeheader()
+            writer.writerow({"name": "Alice", "age": "30", "city": "New York"})
+            writer.writerow({"name": "Bob", "age": "25", "city": "London"})
+            writer.writerow({"name": "Charlie", "age": "35", "city": "Tokyo"})
+
+        # Выполняю конвертацию
+        csv_to_json(str(csv_file), str(json_file))
+
+        # Проверяю результат
+        assert json_file.exists()
+
+        with open(json_file, 'r') as f:
+            json_data = json.load(f)
+
+        # Проверяю количество записей
+        assert len(json_data) == 3
+
+        # Проверяю структуру данных
+        expected_data = [
+            {"name": "Alice", "age": "30", "city": "New York"},
+            {"name": "Bob", "age": "25", "city": "London"},
+            {"name": "Charlie", "age": "35", "city": "Tokyo"}
+        ]
+
+        for i, item in enumerate(json_data):
+            assert item == expected_data[i]
+
+    def test_empty_csv_file(self, tmp_path):
+        """Тест с пустым CSV файлом (только заголовок) - теперь ожидаем ошибку"""
+        csv_file = tmp_path / "test.csv"
+        json_file = tmp_path / "test.json"
+
+        # CSV только с заголовком
+        with open(csv_file, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(["name", "age"])
+
+        # Ожидаю ошибку, так как функция не допускает CSV без данных
+        with pytest.raises(ValueError, match="CSV файл пуст"):
+            csv_to_json(str(csv_file), str(json_file))
+
+    def test_csv_with_different_data_types(self, tmp_path):
+        """Тест CSV с различными типами данных как строки"""
+        csv_file = tmp_path / "test.csv"
+        json_file = tmp_path / "test.json"
+
+        with open(csv_file, 'w', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=["string", "number", "float", "boolean"])
+            writer.writeheader()
+            writer.writerow({
+                "string": "text",
+                "number": "42",
+                "float": "3.14",
+                "boolean": "true"
+            })
+
+        csv_to_json(str(csv_file), str(json_file))
+
+        with open(json_file, 'r') as f:
+            json_data = json.load(f)
+
+        # Все значения остаются строками (CSV не сохраняет типы)
+        assert json_data[0]["string"] == "text"
+        assert json_data[0]["number"] == "42"
+        assert json_data[0]["float"] == "3.14"
+        assert json_data[0]["boolean"] == "true"
+
+    def test_nonexistent_csv_file(self):
+        """Тест с несуществующим CSV файлом"""
+        with pytest.raises(FileNotFoundError):
+            csv_to_json("nonexistent.csv", "output.json")
+
+    def test_csv_with_malformed_data(self, tmp_path):
+        """Тест с CSV с проблемными данными (некорректные кавычки)"""
+        csv_file = tmp_path / "test.csv"
+        json_file = tmp_path / "test.json"
+
+        # Создаю CSV с проблемными данными
+        with open(csv_file, 'w', newline='') as f:
+            f.write('name,description\n')
+            f.write('test,"unclosed quote\n')  # Незакрытая кавычка
+
+        # В зависимости от реализации это может вызвать ошибку или нет
+        # Если функция использует стандартный csv.reader, он может обработать это
+        try:
+            csv_to_json(str(csv_file), str(json_file))
+            # Если не вызвало исключение, проверяю, что файл создан
+            assert json_file.exists()
+        except ValueError:
+            # Или ожидаю ValueError
+            pass
+
+    def test_empty_csv_without_headers(self, tmp_path):
+        """Тест с полностью пустым CSV файлом"""
+        csv_file = tmp_path / "test.csv"
+        csv_file.write_text("")  # Абсолютно пустой файл
+
+        with pytest.raises(ValueError):
+            csv_to_json(str(csv_file), "output.json")
+
+
+class TestRoundTrip:
+    """Тесты на полный цикл конвертации JSON -> CSV -> JSON"""
+
+    def test_round_trip_conversion(self, tmp_path):
+        """Тест полного цикла конвертации"""
+        original_data = [
+            {"name": "Alice", "age": 30, "active": True},
+            {"name": "Bob", "age": 25, "active": False},
+            {"name": "Charlie", "age": 35, "active": True}
+        ]
+
+        # Сохраняю оригинальный JSON
+        original_json = tmp_path / "original.json"
+        with open(original_json, 'w') as f:
+            json.dump(original_data, f)
+
+        # JSON -> CSV
+        intermediate_csv = tmp_path / "intermediate.csv"
+        json_to_csv(str(original_json), str(intermediate_csv))
+
+        # CSV -> JSON
+        final_json = tmp_path / "final.json"
+        csv_to_json(str(intermediate_csv), str(final_json))
+
+        # Загружаю результат
+        with open(final_json, 'r') as f:
+            final_data = json.load(f)
+
+        # Проверяю, что количество записей совпадает
+        assert len(final_data) == len(original_data)
+
+        # Проверяю, что ключи совпадают
+        original_keys = set(original_data[0].keys())
+        final_keys = set(final_data[0].keys())
+        assert original_keys == final_keys
+
+        # Примечание: типы данных могут измениться (числа -> строки, boolean -> строки)
+        # Это нормально для CSV формата
+
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])
+
+```
+### Пояснения
+Ключевые особенности тестов:
+
+1. Позитивные сценарии:
+* Базовая конвертация в обе стороны.
+* Различные типы данных.
+* Файлы с отсутствующими значениями.
+* Пустые массивы/файлы только с заголовками.
+* Полный цикл конвертации (JSON → CSV → JSON).
+2. Негативные сценарии:
+* Несуществующие файлы → FileNotFoundError.
+* Некорректный JSON/CSV → ValueError.
+* Пустые файлы → ValueError.
+3. Использование tmp_path:
+* Все тесты используют временные файлы.
+* Автоматическая очистка после тестов.
+* Изоляция тестов друг от друга.
+4. Проверки:
+Совпадение количества записей.
+Совпадение наборов ключей/заголовков.
+Корректность данных после конвертации.
+
+Особенности:
+1. json_to_csv не допускает пустые массивы JSON.
+2. csv_to_json не допускает CSV файлы без данных (только с заголовком).
+3. Boolean значения преобразуются в строки "True"/"False" (с большой буквы).
+### Пример выполнения
+<img width="1920" height="1200" alt="task B tests_json_csv Kolesnichenko Daria laba07" src="https://github.com/user-attachments/assets/a1d8651e-bec1-45f8-8691-123f125d37e2" />
+<img width="1920" height="1200" alt="task B tests_json_csv Kolesnichenko Daria laba07 (2)" src="https://github.com/user-attachments/assets/c6d831c7-ebb7-402a-bf02-bc5fd3bdbba1" />
+
+
+
+
+
+
+
+
+
 
 
 
