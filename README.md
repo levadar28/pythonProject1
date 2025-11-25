@@ -2700,9 +2700,9 @@ if __name__ == "__main__":
 Установила pytest: pip install pytest.
 
 Анализ поведения функций:
-normalize: Приводит к нижнему регистру и удаляет лишние пробелы.
-tokenize: Разбивает текст на слова, удаляя пунктуацию и специальные символы.
-top_n: При отрицательных значениях n возвращает какие-то элементы (возможно, все или по модулю n).
+* normalize: Приводит к нижнему регистру и удаляет лишние пробелы.
+* tokenize: Разбивает текст на слова, удаляя пунктуацию и специальные символы.
+* top_n: При отрицательных значениях n возвращает какие-то элементы (возможно, все или по модулю n).
 
 ### Пример выполнения
 <img width="1920" height="1200" alt="task A tests_text Kolesnichenko Daria laba07" src="https://github.com/user-attachments/assets/bf641d27-c26e-40d0-93c5-211a6ef18e4e" />
@@ -3042,6 +3042,33 @@ if __name__ == "__main__":
 ### Пример выполнения
 <img width="1920" height="1200" alt="task B tests_json_csv Kolesnichenko Daria laba07" src="https://github.com/user-attachments/assets/a1d8651e-bec1-45f8-8691-123f125d37e2" />
 <img width="1920" height="1200" alt="task B tests_json_csv Kolesnichenko Daria laba07 (2)" src="https://github.com/user-attachments/assets/c6d831c7-ebb7-402a-bf02-bc5fd3bdbba1" />
+
+### C. Стиль кода (`black`)
+1. Установка black: в терминале ввела:  python -m pip install black
+2. Обновила pip: в терминале ввела: python -m pip install --upgrade pip
+3. Форматирование всего проекта: перешла в коренвую директорию своего проекта и выполнила в терминале: bash black .
+   Эта команда отформатирует все Python файлы в проекте и его поддиректориях.
+4. Проверка форматирования:
+   Для проверки, что весь код уже отформатирован правильно: ввела в терминале: bash  black --check .
+   Если все файлы отформатированы корректно, команда завершится без вывода. Если есть файлы, требующие форматирования, black покажет их список.
+### Примеры выполнения
+<img width="1920" height="1200" alt="task C black style Kolesnichenko Daria laba07" src="https://github.com/user-attachments/assets/6b0adb65-5405-4ed4-906c-83f49f5b0d6c" />
+<img width="1920" height="1200" alt="task C black style Kolesnichenko Daria laba07 (2)" src="https://github.com/user-attachments/assets/3972f7ac-d050-4f15-8890-dd7a6c05cf9e" />
+<img width="1920" height="1200" alt="task C black style Kolesnichenko Daria laba07 (3)" src="https://github.com/user-attachments/assets/b6b5d415-62f7-45e7-a2f7-7d4542f16b02" />
+<img width="1920" height="1200" alt="task C black style Kolesnichenko Daria laba07 (4)" src="https://github.com/user-attachments/assets/06c59a5f-3fa6-4a77-be88-551b3a185ba0" />
+<img width="1920" height="1200" alt="task C black style Kolesnichenko Daria laba07 (5)" src="https://github.com/user-attachments/assets/916b367b-7b70-4e10-86aa-6c2146972071" />
+<img width="1920" height="1200" alt="task C black style Kolesnichenko Daria laba07 (6)" src="https://github.com/user-attachments/assets/c4602799-4922-4454-884f-7896d68bf7e7" />
+
+### Вывод
+Научилась писать модульные тесты на `pytest` и поддерживать единый стиль кода (`black`). 
+
+
+
+
+
+
+   
+
 
 
 
