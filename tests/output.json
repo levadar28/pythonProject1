@@ -1,0 +1,7 @@
+[
+  {
+    "invalid": "row",
+    "csv": "with\"quotes",
+    "data": null
+  }
+]
