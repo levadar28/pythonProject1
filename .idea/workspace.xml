@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение git add . git commit  git push" />
+    <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение git add . git commit  git push">
+      <change afterPath="$PROJECT_DIR$/images/lab08/creating example files laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/incomplete.json laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/invalid.json laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/invalid_data.json laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/models_laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/not_list_ json laba08 Kolsenichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/serialize_laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/students_input.json laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/students_json_ laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab08/students_output.json laba08 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab08/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab08/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab08/creating data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab08/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab08/serialize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,51 +59,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test_json_csv.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in tests_text.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.arrays.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cli_convert.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cli_text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.csv to xlsx.executor&quot;: &quot;Run&quot;,
-    &quot;Python.csv_xlsx.executor&quot;: &quot;Run&quot;,
-    &quot;Python.io_txt_csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.json to csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.json_csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
-    &quot;Python.people.json.executor&quot;: &quot;Run&quot;,
-    &quot;Python.primers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test converter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tests_text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_analysis_simple.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_report.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_report_standalone.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text_stats.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tuples.executor&quot;: &quot;Run&quot;,
-    &quot;Python.work with csv.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab07&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_json_csv.py.executor": "Run",
+    "Python tests.Python tests in tests_text.py.executor": "Run",
+    "Python.arrays.executor": "Run",
+    "Python.cli_convert.executor": "Run",
+    "Python.cli_text.executor": "Run",
+    "Python.creating data.executor": "Run",
+    "Python.csv to xlsx.executor": "Run",
+    "Python.csv_xlsx.executor": "Run",
+    "Python.io_txt_csv.executor": "Run",
+    "Python.json to csv.executor": "Run",
+    "Python.json_csv.executor": "Run",
+    "Python.matrix.executor": "Run",
+    "Python.models.executor": "Run",
+    "Python.people.json.executor": "Run",
+    "Python.primers.executor": "Run",
+    "Python.serialize.executor": "Run",
+    "Python.test converter.executor": "Run",
+    "Python.test_data.executor": "Run",
+    "Python.tests_text.executor": "Run",
+    "Python.text.executor": "Run",
+    "Python.text1.executor": "Run",
+    "Python.text_analysis_simple.executor": "Run",
+    "Python.text_report.executor": "Run",
+    "Python.text_report_standalone.executor": "Run",
+    "Python.text_stats.executor": "Run",
+    "Python.tuples.executor": "Run",
+    "Python.work with csv.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab08"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab08" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab07" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab06" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab05" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab05\data\data\out" />
-      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab06" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_json_csv.py">
-    <configuration name="cli_convert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.creating data">
+    <configuration name="creating data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,11 +115,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab06" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab08" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab06/cli_convert.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab08/creating data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,11 +137,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab06" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab08" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab06/test_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab08/models.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +150,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tests_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="serialize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,11 +159,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab08" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/tests_text.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab08/serialize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.creating data" />
+        <item itemvalue="Python.serialize" />
+        <item itemvalue="Python.models" />
         <item itemvalue="Python tests.Python tests in test_json_csv.py" />
         <item itemvalue="Python tests.Python tests in tests_text.py" />
-        <item itemvalue="Python.tests_text" />
-        <item itemvalue="Python.cli_convert" />
-        <item itemvalue="Python.test_data" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764092752665</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1764097443578</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764097443578</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
