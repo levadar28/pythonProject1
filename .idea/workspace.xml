@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение git add . git commit  git push">
-      <change afterPath="$PROJECT_DIR$/images/lab08/creating example files laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/incomplete.json laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/invalid.json laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/invalid_data.json laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/models_laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/not_list_ json laba08 Kolsenichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/serialize_laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/students_input.json laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/students_json_ laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab08/students_output.json laba08 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab08/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab08/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab08/creating data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab08/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab08/serialize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab09/group (2) laba09 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab09/group (3) laba09 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab09/group laba09 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab09/stats (2) laba09 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lab09/stats laba09 Kolesnichenko Daria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab09/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab09/group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab09/stats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +62,7 @@
     "Python.creating data.executor": "Run",
     "Python.csv to xlsx.executor": "Run",
     "Python.csv_xlsx.executor": "Run",
+    "Python.group.executor": "Run",
     "Python.io_txt_csv.executor": "Run",
     "Python.json to csv.executor": "Run",
     "Python.json_csv.executor": "Run",
@@ -77,6 +71,7 @@
     "Python.people.json.executor": "Run",
     "Python.primers.executor": "Run",
     "Python.serialize.executor": "Run",
+    "Python.stats.executor": "Run",
     "Python.test converter.executor": "Run",
     "Python.test_data.executor": "Run",
     "Python.tests_text.executor": "Run",
@@ -90,22 +85,23 @@
     "Python.work with csv.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab08"
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_labs1/pythonProject1/images/lab09"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab09" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab08" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab07" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab06" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\images\lab05" />
-      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab05\data\data\out" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\data\lab09" />
       <recent name="C:\Users\user\PycharmProjects\python_labs1\pythonProject1\src\lab06" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.creating data">
+  <component name="RunManager" selected="Python.stats">
     <configuration name="creating data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -120,6 +116,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab08/creating data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab09" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab09/group.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,43 +190,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_json_csv.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/lab09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_json_csv.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in tests_text.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tests_text.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lab09/stats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stats" />
+        <item itemvalue="Python.group" />
         <item itemvalue="Python.creating data" />
         <item itemvalue="Python.serialize" />
         <item itemvalue="Python.models" />
-        <item itemvalue="Python tests.Python tests in test_json_csv.py" />
-        <item itemvalue="Python tests.Python tests in tests_text.py" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764097443578</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1764697769233</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764697769233</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
