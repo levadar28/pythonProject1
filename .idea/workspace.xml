@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c48771c-89ae-4e19-a91c-3b61b823d075" name="Changes" comment="Любое сообщение git add . git commit  git push">
-      <change afterPath="$PROJECT_DIR$/images/lab10/linked list laba10 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lab10/structures laba10 Kolesnichenko Daria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab10/10 README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab10/linked_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab10/structures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab10/tested_linked list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab10/10 README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab10/10 README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765304049959</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Любое сообщение git add . git commit  git push">
+      <option name="closed" value="true" />
+      <created>1765743727824</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765743727824</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
